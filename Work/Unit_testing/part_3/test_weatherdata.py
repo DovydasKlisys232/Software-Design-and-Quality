@@ -1,10 +1,10 @@
 import unittest
 
-#importing employee class from employee module
+#importing WeatherData class from WeatherDataClass module
 from WeatherDataClass import WeatherData
 
 #create test case that inherits from 'unittest.TestCase'
-class TestEmployee(unittest.TestCase):
+class TestWeatherData(unittest.TestCase):
 
     #1st test
     def test_data(self):
@@ -24,4 +24,3 @@ class TestEmployee(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
