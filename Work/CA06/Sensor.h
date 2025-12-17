@@ -1,19 +1,24 @@
+#ifndef SENSOR_H
+#define SENSOR_H
+
+#include "SensorData.h"
+
 /**
- * Project Untitled
+ * @class Sensor
+ * @brief Abstract base class for all sensor types
+ * 
+ * Provides interface for reading sensor data. Derived classes
+ * must implement the read() method for specific sensor types.
  */
 
-
-#ifndef _SENSOR_H
-#define _SENSOR_H
-
-#include "Weather_station.h"
-
-
 class Sensor {
-public: 
-    Weather_station 1;
-    
-SensorData read();
+public:
+    /**
+     * @brief Pure virtual function to read sensor data
+     * @return SensorData object containing the reading
+     */
+    virtual SensorData read() = 0;
+
 };
 
-#endif //_SENSOR_H
+#endif

@@ -1,50 +1,29 @@
-/**
- * Project Untitled
- */
-
 
 #include "Weather_station.h"
+#include "Temperature_sensor.h"
 
-/**
- * Weather_station implementation
- */
+Weather_station::Weather_station() : transmissionInterval(2000){
+    display = new Display();
+    Sensors[0] = new Temperature_Sensor();
+    memoryBanks[0] = new Memory_bank();
+}
 
-
-/**
- * @return SensorData
- */
 SensorData Weather_station::readSensors() {
-    return null;
+    // read data from sensors
 }
 
-/**
- * @param data
- */
 void Weather_station::saveData(SensorData data) {
-
+    // save data function
 }
 
-/**
- * @param btnId
- */
-void Weather_station::setDisplayState(Integer btnId) {
-
+void Weather_station::setDisplayState(int btnId) {
+    //sets the display mode 
 }
 
-void Weather_station::updateDisplay() {
-
-}
-
-/**
- * @param data
- */
 void Weather_station::transferData(SensorData data) {
-
+    //transfers the data from sensors to satellite
 }
 
-/**
- * @param interval
- */
-void Weather_station::scheduleTransmission(Integer interval) {
-
+void Weather_station::scheduleTransmission(int interval) {
+    //sets the interval of transmission
 }

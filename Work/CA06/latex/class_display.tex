@@ -1,0 +1,102 @@
+\doxysection{Display Class Reference}
+\hypertarget{class_display}{}\label{class_display}\index{Display@{Display}}
+
+
+Handles display output for different viewing modes.  
+
+
+
+
+{\ttfamily \#include $<$Display.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_display_ae972fffea6f7ca1d627ef48c3d841bb3}\label{class_display_ae972fffea6f7ca1d627ef48c3d841bb3} 
+{\bfseries Display} ()
+\begin{DoxyCompactList}\small\item\em Constructor sets up the display to real-\/time mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_display_ab37d00e1b6b819a7041cbc02debbc4a8}{chang\+State}} (int btn\+Id)
+\begin{DoxyCompactList}\small\item\em Changes display mode based on the button input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_display_a0e24ee68fc6daf9f0b87a94e7f4c4a98}{display\+\_\+data}} (\mbox{\hyperlink{class_sensor_data}{Sensor\+Data}} data)
+\begin{DoxyCompactList}\small\item\em Displays the sensor data on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sensor_data}{Sensor\+Data}} \mbox{\hyperlink{class_display_ae7f4671af9301ecc64dedb9b3bcf35f4}{get\+Data}} (Data\+View data\+Interval)
+\begin{DoxyCompactList}\small\item\em Retrieves data for a specific display mode. \end{DoxyCompactList}\item 
+Data\+View \mbox{\hyperlink{class_display_a4c40e3a746030e8c0648918887815d36}{get\+State}} () const
+\begin{DoxyCompactList}\small\item\em Gets current display state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles display output for different viewing modes. 
+
+Manages the display state and renders sensor data according to the current display mode (real-\/time, hourly, or daily). 
+
+\label{doc-func-members}
+\Hypertarget{class_display_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_display_ab37d00e1b6b819a7041cbc02debbc4a8}\index{Display@{Display}!changState@{changState}}
+\index{changState@{changState}!Display@{Display}}
+\doxysubsubsection{\texorpdfstring{changState()}{changState()}}
+{\footnotesize\ttfamily \label{class_display_ab37d00e1b6b819a7041cbc02debbc4a8} 
+void Display\+::chang\+State (\begin{DoxyParamCaption}\item[{int}]{btn\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changes display mode based on the button input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em btn\+Id} & button identifier is used for changing display modes \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_display_a0e24ee68fc6daf9f0b87a94e7f4c4a98}\index{Display@{Display}!display\_data@{display\_data}}
+\index{display\_data@{display\_data}!Display@{Display}}
+\doxysubsubsection{\texorpdfstring{display\_data()}{display\_data()}}
+{\footnotesize\ttfamily \label{class_display_a0e24ee68fc6daf9f0b87a94e7f4c4a98} 
+void Display\+::display\+\_\+data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sensor_data}{Sensor\+Data}}}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Displays the sensor data on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \doxylink{class_sensor_data}{Sensor\+Data} to be displayed \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_display_ae7f4671af9301ecc64dedb9b3bcf35f4}\index{Display@{Display}!getData@{getData}}
+\index{getData@{getData}!Display@{Display}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily \label{class_display_ae7f4671af9301ecc64dedb9b3bcf35f4} 
+\mbox{\hyperlink{class_sensor_data}{Sensor\+Data}} Display\+::get\+Data (\begin{DoxyParamCaption}\item[{Data\+View}]{data\+Interval}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves data for a specific display mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Interval} & is the chosen display mode (real-\/time, hourly historical or daily historical) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_sensor_data}{Sensor\+Data} for the chosen display mode 
+\end{DoxyReturn}
+\Hypertarget{class_display_a4c40e3a746030e8c0648918887815d36}\index{Display@{Display}!getState@{getState}}
+\index{getState@{getState}!Display@{Display}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily \label{class_display_a4c40e3a746030e8c0648918887815d36} 
+Data\+View Display\+::get\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets current display state. 
+
+\begin{DoxyReturn}{Returns}
+Returns the current Data\+View state 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Display.\+h\item 
+Display.\+cpp\end{DoxyCompactItemize}

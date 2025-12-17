@@ -1,22 +1,22 @@
+#ifndef WEATHER_INFORMATION_SERVICE_H
+#define WEATHER_INFORMATION_SERVICE_H
+
+#include "SensorData.h"
 /**
- * Project Untitled
+ * @class Weather_information_service
+ * @brief Manages satellite communication for data transmission
+ * 
+ * Handles transmission of weather data to external systems
+ * via satellite link.
  */
-
-
-#ifndef _WEATHER_INFORMATION_SERVICE_H
-#define _WEATHER_INFORMATION_SERVICE_H
-
-#include "Weather_station.h"
-
-
 class Weather_information_service {
-public: 
-    Weather_station 1;
-    
-/**
- * @param data
- */
-boolean transfer(SensorData data);
+public:
+    /**
+     * @brief Transfers sensor data via satellite
+     * @param data SensorData to transmit
+     * @return true if transmission was successful, else return false
+     */
+    bool transfer(SensorData data) { }
 };
 
-#endif //_WEATHER_INFORMATION_SERVICE_H
+#endif

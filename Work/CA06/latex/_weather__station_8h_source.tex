@@ -1,0 +1,41 @@
+\doxysection{Weather\+\_\+station.\+h}
+\hypertarget{_weather__station_8h_source}{}\label{_weather__station_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ WEATHER\_STATION\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ WEATHER\_STATION\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Display.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Sensor.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Memory\_bank.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Weather\_information\_service.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_weather__station_aeda45f673d69943bcccf36a58bdb86b6}{Weather\_station}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_display}{Display}}*\ display;\ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_sensor}{Sensor}}*\ Sensors[3];\ }
+\DoxyCodeLine{00020\ \ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_memory__bank}{Memory\_bank}}*\ memoryBanks[1];\ \ \ \ }
+\DoxyCodeLine{00022\ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_sensor_data}{SensorData}}\ currentData;\ }
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ transmissionInterval;\ \ \ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_weather__station_aeda45f673d69943bcccf36a58bdb86b6}{Weather\_station}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_sensor_data}{SensorData}}\ \mbox{\hyperlink{class_weather__station_ae19be3c13285ba93f5a2fe04a3321204}{readSensors}}();}
+\DoxyCodeLine{00037\ \ \ \ \ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weather__station_ae3167e379b9216ab81020c20e1ad43b0}{saveData}}(\mbox{\hyperlink{class_sensor_data}{SensorData}}\ data);}
+\DoxyCodeLine{00043\ \ \ \ \ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weather__station_a850617f50fbbc9c85c9bce25609fa372}{setDisplayState}}(\textcolor{keywordtype}{int}\ btnId);}
+\DoxyCodeLine{00049\ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weather__station_aa543a0ffe7a96b4358407cc56ee675dc}{updateDisplay}}();}
+\DoxyCodeLine{00054\ \ \ \ \ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weather__station_ae387193d6a280a0edc978eb856c9a277}{transferData}}(\mbox{\hyperlink{class_sensor_data}{SensorData}}\ data);}
+\DoxyCodeLine{00060\ \ \ \ \ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weather__station_ad8e6387d2e7baacef92c3cb113db41d9}{scheduleTransmission}}(\textcolor{keywordtype}{int}\ interval);}
+\DoxyCodeLine{00066\ \};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

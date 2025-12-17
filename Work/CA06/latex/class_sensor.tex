@@ -1,0 +1,54 @@
+\doxysection{Sensor Class Reference}
+\hypertarget{class_sensor}{}\label{class_sensor}\index{Sensor@{Sensor}}
+
+
+Abstract base class for all sensor types.  
+
+
+
+
+{\ttfamily \#include $<$Sensor.\+h$>$}
+
+Inheritance diagram for Sensor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sensor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_sensor_data}{Sensor\+Data}} \mbox{\hyperlink{class_sensor_a8a21a3d413970d0e8a4c1853fa92c1b5}{read}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to read sensor data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for all sensor types. 
+
+Provides interface for reading sensor data. Derived classes must implement the \doxylink{class_sensor_a8a21a3d413970d0e8a4c1853fa92c1b5}{read()} method for specific sensor types. 
+
+\label{doc-func-members}
+\Hypertarget{class_sensor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sensor_a8a21a3d413970d0e8a4c1853fa92c1b5}\index{Sensor@{Sensor}!read@{read}}
+\index{read@{read}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_sensor_a8a21a3d413970d0e8a4c1853fa92c1b5} 
+virtual \mbox{\hyperlink{class_sensor_data}{Sensor\+Data}} Sensor\+::read (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function to read sensor data. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_sensor_data}{Sensor\+Data} object containing the reading 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_pressure___sensor_a4dae2f3e54f5d4557e82d69f58cae19c}{Pressure\+\_\+\+Sensor}}, \mbox{\hyperlink{class_temperature___sensor_a0824807850de6278f4fa98efae8e96d4}{Temperature\+\_\+\+Sensor}}, and \mbox{\hyperlink{class_wind___speed___sensor_a4b2f41bc14f8c61ebea98265c07698f5}{Wind\+\_\+\+Speed\+\_\+\+Sensor}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sensor.\+h\end{DoxyCompactItemize}

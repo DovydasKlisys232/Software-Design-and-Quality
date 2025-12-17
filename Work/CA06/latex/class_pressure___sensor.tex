@@ -1,0 +1,58 @@
+\doxysection{Pressure\+\_\+\+Sensor Class Reference}
+\hypertarget{class_pressure___sensor}{}\label{class_pressure___sensor}\index{Pressure\_Sensor@{Pressure\_Sensor}}
+
+
+Concrete sensor class for measuring atmospheric pressure.  
+
+
+
+
+{\ttfamily \#include $<$Pressure\+\_\+sensor.\+h$>$}
+
+Inheritance diagram for Pressure\+\_\+\+Sensor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pressure___sensor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pressure___sensor_a669ead56d062e55db7044db2023e3876}\label{class_pressure___sensor_a669ead56d062e55db7044db2023e3876} 
+{\bfseries Pressure\+\_\+\+Sensor} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sensor_data}{Sensor\+Data}} \mbox{\hyperlink{class_pressure___sensor_a4dae2f3e54f5d4557e82d69f58cae19c}{read}} () override
+\begin{DoxyCompactList}\small\item\em Reads pressure data from sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete sensor class for measuring atmospheric pressure. 
+
+Implements the \doxylink{class_sensor}{Sensor} interface to provide barometric pressure readings from the connected pressure sensor hardware. 
+
+\label{doc-func-members}
+\Hypertarget{class_pressure___sensor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pressure___sensor_a4dae2f3e54f5d4557e82d69f58cae19c}\index{Pressure\_Sensor@{Pressure\_Sensor}!read@{read}}
+\index{read@{read}!Pressure\_Sensor@{Pressure\_Sensor}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_pressure___sensor_a4dae2f3e54f5d4557e82d69f58cae19c} 
+\mbox{\hyperlink{class_sensor_data}{Sensor\+Data}} Pressure\+\_\+\+Sensor\+::read (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reads pressure data from sensor. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_sensor_data}{Sensor\+Data} containing pressure reading 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_sensor_a8a21a3d413970d0e8a4c1853fa92c1b5}{Sensor}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pressure\+\_\+sensor.\+h\item 
+Pressure\+\_\+sensor.\+cpp\end{DoxyCompactItemize}

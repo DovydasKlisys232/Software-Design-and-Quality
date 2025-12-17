@@ -1,15 +1,23 @@
-/**
- * Project Untitled
- */
-
-
-#ifndef _TEMPERATURE_SENSOR_H
-#define _TEMPERATURE_SENSOR_H
+#ifndef TEMPERATURE_SENSOR_H
+#define TEMPERATURE_SENSOR_H
 
 #include "Sensor.h"
 
+/**
+ * @class Temperature_Sensor
+ * @brief Represents a temperature sensor.
+ */
+class Temperature_Sensor : public Sensor {
+public:
+    /**
+     * @brief constructor
+     */
+    Temperature_Sensor();
 
-class Temperature_Sensor: public Sensor {
+    /**
+     * @brief Temperature sensor read function imlementation
+     */
+    SensorData read() override;
 };
 
-#endif //_TEMPERATURE_SENSOR_H
+#endif // TEMPERATURE_SENSOR_H

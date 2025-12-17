@@ -1,10 +1,9 @@
-/**
- * Project Untitled
- */
+#include "Wind_Speed_sensor.h"
 
+Wind_Speed_Sensor::Wind_Speed_Sensor() {
+    // Constructor
+}
 
-#include "Wind_Speed_Sensor.h"
-
-/**
- * Wind_Speed_Sensor implementation
- */
+SensorData Wind_Speed_Sensor::read() {
+    // specific read functionality for wind speed sensor
+}

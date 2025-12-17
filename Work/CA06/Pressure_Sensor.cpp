@@ -1,10 +1,9 @@
-/**
- * Project Untitled
- */
+#include "Pressure_sensor.h"
 
+Pressure_Sensor::Pressure_Sensor() {
+    // Constructor
+}
 
-#include "Pressure_Sensor.h"
-
-/**
- * Pressure_Sensor implementation
- */
+SensorData Pressure_Sensor::read() {
+    // specific read functionality for pressure sensor
+}

@@ -1,33 +1,21 @@
-/**
- * Project Untitled
- */
-
-
 #include "Display.h"
 
-/**
- * Display implementation
- */
-
-
-/**
- * @param btnId
- */
-void Display::changeState(Integer btnId) {
-
+Display::Display() : state(real_time) {
+    // Constructor 
 }
 
-/**
- * @param data
- */
-void Display::display(SensorData data) {
-
+void Display::changState(int btnId) {
+    // changes the display state
 }
 
-/**
- * @param dataInterval
- * @return  SensorData
- */
- SensorData Display::getData(DataView dataInterval) {
-    return null;
+void Display::display_data(SensorData data) {
+    // displays the data collected by the sensor
+}
+
+SensorData Display::getData(DataView dataInterval) {
+    // retrieves data for the fiven mode
+}
+
+DataView Display::getState() const {
+    //retrives the current set display state
 }

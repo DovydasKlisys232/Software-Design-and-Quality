@@ -1,0 +1,119 @@
+\doxysection{Weather\+\_\+station Class Reference}
+\hypertarget{class_weather__station}{}\label{class_weather__station}\index{Weather\_station@{Weather\_station}}
+
+
+Main controller for the weather monitoring system.  
+
+
+
+
+{\ttfamily \#include $<$Memory\+\_\+bank.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_weather__station_aeda45f673d69943bcccf36a58bdb86b6}\label{class_weather__station_aeda45f673d69943bcccf36a58bdb86b6} 
+{\bfseries Weather\+\_\+station} ()
+\begin{DoxyCompactList}\small\item\em Constructor initializes all components in the Weather system. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sensor_data}{Sensor\+Data}} \mbox{\hyperlink{class_weather__station_ae19be3c13285ba93f5a2fe04a3321204}{read\+Sensors}} ()
+\begin{DoxyCompactList}\small\item\em Reads data from all connected sensors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weather__station_ae3167e379b9216ab81020c20e1ad43b0}{save\+Data}} (\mbox{\hyperlink{class_sensor_data}{Sensor\+Data}} data)
+\begin{DoxyCompactList}\small\item\em Saves sensor data to memory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weather__station_a850617f50fbbc9c85c9bce25609fa372}{set\+Display\+State}} (int btn\+Id)
+\begin{DoxyCompactList}\small\item\em Updates the display with current state. \end{DoxyCompactList}\item 
+\Hypertarget{class_weather__station_aa543a0ffe7a96b4358407cc56ee675dc}\label{class_weather__station_aa543a0ffe7a96b4358407cc56ee675dc} 
+void {\bfseries update\+Display} ()
+\begin{DoxyCompactList}\small\item\em Refreshes the display output. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weather__station_ae387193d6a280a0edc978eb856c9a277}{transfer\+Data}} (\mbox{\hyperlink{class_sensor_data}{Sensor\+Data}} data)
+\begin{DoxyCompactList}\small\item\em Transfers data to external service. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weather__station_ad8e6387d2e7baacef92c3cb113db41d9}{schedule\+Transmission}} (int interval)
+\begin{DoxyCompactList}\small\item\em Schedules automatic data transmission. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main controller for the weather monitoring system. 
+
+Coordinates sensors, display, memory storage and data transmission 
+
+\label{doc-func-members}
+\Hypertarget{class_weather__station_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_weather__station_ae19be3c13285ba93f5a2fe04a3321204}\index{Weather\_station@{Weather\_station}!readSensors@{readSensors}}
+\index{readSensors@{readSensors}!Weather\_station@{Weather\_station}}
+\doxysubsubsection{\texorpdfstring{readSensors()}{readSensors()}}
+{\footnotesize\ttfamily \label{class_weather__station_ae19be3c13285ba93f5a2fe04a3321204} 
+\mbox{\hyperlink{class_sensor_data}{Sensor\+Data}} Weather\+\_\+station\+::read\+Sensors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reads data from all connected sensors. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_sensor_data}{Sensor\+Data} containing current readings 
+\end{DoxyReturn}
+\Hypertarget{class_weather__station_ae3167e379b9216ab81020c20e1ad43b0}\index{Weather\_station@{Weather\_station}!saveData@{saveData}}
+\index{saveData@{saveData}!Weather\_station@{Weather\_station}}
+\doxysubsubsection{\texorpdfstring{saveData()}{saveData()}}
+{\footnotesize\ttfamily \label{class_weather__station_ae3167e379b9216ab81020c20e1ad43b0} 
+void Weather\+\_\+station\+::save\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sensor_data}{Sensor\+Data}}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Saves sensor data to memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The \doxylink{class_sensor_data}{Sensor\+Data} to store \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_weather__station_ad8e6387d2e7baacef92c3cb113db41d9}\index{Weather\_station@{Weather\_station}!scheduleTransmission@{scheduleTransmission}}
+\index{scheduleTransmission@{scheduleTransmission}!Weather\_station@{Weather\_station}}
+\doxysubsubsection{\texorpdfstring{scheduleTransmission()}{scheduleTransmission()}}
+{\footnotesize\ttfamily \label{class_weather__station_ad8e6387d2e7baacef92c3cb113db41d9} 
+void Weather\+\_\+station\+::schedule\+Transmission (\begin{DoxyParamCaption}\item[{int}]{interval}{}\end{DoxyParamCaption})}
+
+
+
+Schedules automatic data transmission. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em interval} & Time interval in seconds \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_weather__station_a850617f50fbbc9c85c9bce25609fa372}\index{Weather\_station@{Weather\_station}!setDisplayState@{setDisplayState}}
+\index{setDisplayState@{setDisplayState}!Weather\_station@{Weather\_station}}
+\doxysubsubsection{\texorpdfstring{setDisplayState()}{setDisplayState()}}
+{\footnotesize\ttfamily \label{class_weather__station_a850617f50fbbc9c85c9bce25609fa372} 
+void Weather\+\_\+station\+::set\+Display\+State (\begin{DoxyParamCaption}\item[{int}]{btn\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Updates the display with current state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em btn\+Id} & \doxylink{class_button}{Button} identifier for state changes \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_weather__station_ae387193d6a280a0edc978eb856c9a277}\index{Weather\_station@{Weather\_station}!transferData@{transferData}}
+\index{transferData@{transferData}!Weather\_station@{Weather\_station}}
+\doxysubsubsection{\texorpdfstring{transferData()}{transferData()}}
+{\footnotesize\ttfamily \label{class_weather__station_ae387193d6a280a0edc978eb856c9a277} 
+void Weather\+\_\+station\+::transfer\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sensor_data}{Sensor\+Data}}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Transfers data to external service. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \doxylink{class_sensor_data}{Sensor\+Data} to transmit \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+station.\+h\item 
+Weather\+\_\+station.\+cpp\end{DoxyCompactItemize}

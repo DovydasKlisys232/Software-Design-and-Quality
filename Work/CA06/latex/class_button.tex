@@ -1,0 +1,67 @@
+\doxysection{Button Class Reference}
+\hypertarget{class_button}{}\label{class_button}\index{Button@{Button}}
+
+
+Changes data displayed on the \doxylink{class_display}{Display} (real-\/time, hourly or historical data)  
+
+
+
+
+{\ttfamily \#include $<$Button.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_button_a43aa897ddc2f2002e8d02fbdbd743c00}{Button}} (int btn\+Id)
+\begin{DoxyCompactList}\small\item\em Constructor with button ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_button_a0662b25887388c86012a4bbdd2f8b204}{button\+ISR}} (int btn\+Id)
+\begin{DoxyCompactList}\small\item\em Interrupt service routine for button press. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Changes data displayed on the \doxylink{class_display}{Display} (real-\/time, hourly or historical data) 
+
+\label{doc-constructors}
+\Hypertarget{class_button_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_button_a43aa897ddc2f2002e8d02fbdbd743c00}\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{Button()}{Button()}}
+{\footnotesize\ttfamily \label{class_button_a43aa897ddc2f2002e8d02fbdbd743c00} 
+Button\+::\+Button (\begin{DoxyParamCaption}\item[{int}]{btn\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor with button ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em btn\+Id} & is the unique identifier for button object \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_button_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_button_a0662b25887388c86012a4bbdd2f8b204}\index{Button@{Button}!buttonISR@{buttonISR}}
+\index{buttonISR@{buttonISR}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{buttonISR()}{buttonISR()}}
+{\footnotesize\ttfamily \label{class_button_a0662b25887388c86012a4bbdd2f8b204} 
+void Button\+::button\+ISR (\begin{DoxyParamCaption}\item[{int}]{btn\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Interrupt service routine for button press. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em btn\+Id} & \doxylink{class_button}{Button} identifier that was pressed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Button.\+h\item 
+Button.\+cpp\end{DoxyCompactItemize}

@@ -1,27 +1,9 @@
-/**
- * Project Untitled
- */
-
-
 #include "Memory_bank.h"
 
-/**
- * Memory_bank implementation
- */
-
-
-/**
- * @param dataInterval
- * @return SensorData
- */
-SensorData Memory_bank::getData(Dataview dataInterval) {
-    return null;
+SensorData Memory_bank::getData(DataView dataInterval) {
+    // retrives the data collected in a given mode (real-time, hourly historical, daily historical)
 }
 
-/**
- * @param data
- * @return boolean
- */
-boolean Memory_bank::saveData(SensorData data) {
-    return false;
+bool Memory_bank::saveData(SensorData data) {
+    // stores the collected data from the sensor into storage
 }

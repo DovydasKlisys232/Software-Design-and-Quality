@@ -1,0 +1,56 @@
+\doxysection{Memory\+\_\+bank Class Reference}
+\hypertarget{class_memory__bank}{}\label{class_memory__bank}\index{Memory\_bank@{Memory\_bank}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sensor_data}{Sensor\+Data}} \mbox{\hyperlink{class_memory__bank_ad2d357809c900c8f1dc81b4957208548}{get\+Data}} (Data\+View data\+Interval)
+\begin{DoxyCompactList}\small\item\em Retrieves data from the chosen display mode (real-\/time, daily historical or hourly historical) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_memory__bank_a4f223c509e05538375e50ae3abaf1a09}{save\+Data}} (\mbox{\hyperlink{class_sensor_data}{Sensor\+Data}} data)
+\begin{DoxyCompactList}\small\item\em saves sensor data to memory \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_memory__bank_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_memory__bank_ad2d357809c900c8f1dc81b4957208548}\index{Memory\_bank@{Memory\_bank}!getData@{getData}}
+\index{getData@{getData}!Memory\_bank@{Memory\_bank}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily \label{class_memory__bank_ad2d357809c900c8f1dc81b4957208548} 
+\mbox{\hyperlink{class_sensor_data}{Sensor\+Data}} Memory\+\_\+bank\+::get\+Data (\begin{DoxyParamCaption}\item[{Data\+View}]{data\+Interval}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves data from the chosen display mode (real-\/time, daily historical or hourly historical) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Interval} & is the type of data being collected \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_sensor_data}{Sensor\+Data} for the requested interval 
+\end{DoxyReturn}
+\Hypertarget{class_memory__bank_a4f223c509e05538375e50ae3abaf1a09}\index{Memory\_bank@{Memory\_bank}!saveData@{saveData}}
+\index{saveData@{saveData}!Memory\_bank@{Memory\_bank}}
+\doxysubsubsection{\texorpdfstring{saveData()}{saveData()}}
+{\footnotesize\ttfamily \label{class_memory__bank_a4f223c509e05538375e50ae3abaf1a09} 
+bool Memory\+\_\+bank\+::save\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sensor_data}{Sensor\+Data}}}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+saves sensor data to memory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \doxylink{class_sensor_data}{Sensor\+Data} to store in memory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if save was successful, false if failed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Memory\+\_\+bank.\+h\item 
+Memory\+\_\+bank.\+cpp\end{DoxyCompactItemize}

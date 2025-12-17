@@ -1,0 +1,28 @@
+\doxysection{Sensor\+Data.\+h}
+\hypertarget{_sensor_data_8h_source}{}\label{_sensor_data_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SENSORDATA\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SENSORDATA\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{enum}\ DataView\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ real\_time,\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00010\ \ \ \ \ hourly\_historical,\ \ \ }
+\DoxyCodeLine{00011\ \ \ \ \ daily\_historical\ \ \ \ \ }
+\DoxyCodeLine{00012\ \};\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sensor_data_a9c7635edc250b312fc895fb9a34bf4fb}{SensorData}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{float}\ temperature;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{float}\ windSpeed;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{float}\ pressure;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_sensor_data_a9c7635edc250b312fc895fb9a34bf4fb}{SensorData}}()\ :\ temperature(0.0),\ windSpeed(0.0),\ pressure(0.0)\ \{\}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_sensor_data_aa10c3ebd0e3031ce8316a57f714b7e53}{SensorData}}(\textcolor{keywordtype}{float}\ temp,\ \textcolor{keywordtype}{float}\ wind,\ \textcolor{keywordtype}{float}\ press)\ :\ temperature(temp),\ windSpeed(wind),\ pressure(press)\ \{\}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

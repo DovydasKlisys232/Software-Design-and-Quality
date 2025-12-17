@@ -1,0 +1,28 @@
+\doxysection{Display.\+h}
+\hypertarget{_display_8h_source}{}\label{_display_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DISPLAY\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DISPLAY\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}SensorData.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_display_ae972fffea6f7ca1d627ef48c3d841bb3}{Display}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ DataView\ state;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_display_ae972fffea6f7ca1d627ef48c3d841bb3}{Display}}()\ :\ state(real\_time)\ \{\}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_display_ab37d00e1b6b819a7041cbc02debbc4a8}{changState}}(\textcolor{keywordtype}{int}\ btnId)\ \{\}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_display_a0e24ee68fc6daf9f0b87a94e7f4c4a98}{display\_data}}(\mbox{\hyperlink{class_sensor_data}{SensorData}}\ data)\ \{\}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_sensor_data}{SensorData}}\ \mbox{\hyperlink{class_display_ae7f4671af9301ecc64dedb9b3bcf35f4}{getData}}(DataView\ dataInterval)\ \{\}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \ \ DataView\ \mbox{\hyperlink{class_display_a4c40e3a746030e8c0648918887815d36}{getState}}()\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ state;}
+\DoxyCodeLine{00047\ \ \ \ \ \}}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
